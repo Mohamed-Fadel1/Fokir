@@ -1,0 +1,299 @@
+
+* {
+   scroll-behavior: smooth;
+}
+
+html {
+scroll-padding-top: 30px;
+}
+/* SHARED STYLE */
+
+ 
+   p {
+    font-family: 'Roboto', sans-serif;
+
+   }
+
+   /* h1,h2,h3,h4,h5,h6 {
+    font-family: 'Source Sans 3', sans-serif;
+
+   } */
+
+   :root {
+    --main-color: #ff205b
+   }
+
+
+   #home {
+      background-image: url(../hero\ img.jpg);
+      background-position: center;
+      background-size: cover;
+   }
+
+   .content-home h4 {
+font-size: 24px;
+   }
+   .content-home h1 {
+      font-size: 70px;
+      color: var(--main-color);
+     
+   }
+   .nav-link {
+      color: white;
+   }
+.navbar-brand {
+   color: var(--main-color);
+   font-size: 24px;
+   
+}
+
+
+.navbar-nav .nav-link.active {
+   color: var(--main-color);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+color: var(--main-color);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+   transition: all 0.5s;
+}
+
+
+/* START ABOUT SECTION */
+
+#about h2::before {
+   content: "";
+   width: 4px;
+   height: 25px;
+   background-color: var(--main-color);
+   position: absolute;
+   left: -10px;
+   bottom: 5px;
+}
+
+#about .content-about p{
+   border-bottom: 1px dashed #999;
+   padding-bottom: 20px;
+   
+}
+
+#about .left ul li {
+   list-style: none;
+
+}
+
+#about .left ul li span {
+   font-weight:700;
+}
+
+#about button {
+   background-color: var(--main-color);
+   border: none;
+   color: white;
+   margin-top: 10px;
+   transition: all 0.5s;
+}
+
+#about button:hover {
+   background-color: #e42558;
+}
+
+
+
+
+
+.border-img {
+   border: 9px solid  #555555;
+   border-radius: 4px;
+}
+
+
+.img:hover .layer-img {
+   top: 0 !important;
+}
+
+.about-img .img {
+   top: 15px;
+   left: 15px;
+
+}
+
+
+.layer-img {
+   background-color: rgba(0, 0, 0, 0.6);
+   transition: all 0.5s;
+}
+
+.icon:hover {
+   color: var(--main-color);
+}
+
+.icon {
+   transition: all 0.5s;
+}
+
+
+
+
+@media (max-width: 767px) {
+   .border-img {
+      border: none;
+   }
+
+  
+}
+
+/* START SERVICES SECTION */
+
+
+#services {
+   background-color: #f1f1f1;
+}
+
+#services .title h2 {
+   font-size: 40px;
+   color: #333;
+}
+
+
+.services-icon {
+   color: var(--main-color);
+}
+
+#services .item:hover {
+ box-shadow: 5px 19px 15px #f1f1f1;
+ background-color: #fff;
+border-radius: 10px;
+}
+
+.item {
+   transition: all 0.6s;
+}
+
+.item h3 {
+   font-size: 24px;
+}
+
+
+.title h2::after {
+   content: "";
+   width: 180px;
+   height: 1px;
+   background-color: var(--main-color);
+   position: absolute;
+   bottom: -20px;
+   transform: translateX(-115%);
+   
+}
+
+.title h2::before {
+   content: "";
+   border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0px;
+    bottom: -25px;
+    padding: 4px 0 5px;
+    width: 70px;
+    transform: translateX(110%);
+    position: absolute;
+}
+  
+
+/* ______START PORTFOLIO SECTION */
+   
+#portfolio h2 {
+   font-size: 40px;
+   color: #333;
+}
+
+
+#portfolio .title h2::after {
+   content: "";
+   width: 180px;
+   height: 1px;
+   background-color: var(--main-color);
+   position: absolute;
+   bottom: -20px;
+   transform: translateX(-115%);
+   
+}
+
+#portfolio .title h2::before {
+   content: "";
+   border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0px;
+    bottom: -25px;
+    padding: 4px 0 5px;
+    width: 70px;
+    transform: translateX(130%);
+    position: absolute;
+}
+  
+.nav-pills .nav-link {
+   color: black;
+}
+
+.nav-pills .nav-link.active {
+  color: var(--main-color);
+  background-color: transparent;
+}
+
+.portfolio-layer {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   background-color: rgba(0, 0,0, 0);
+   transition: all 0.5s;
+}
+
+.portfolio-items:hover .portfolio-layer {
+   background-color: rgba(0, 0,0, 0.6);
+}
+
+
+/* START NUMBER SECTION */
+
+
+#number {
+   background-color: #f1f1f1;
+}
+
+
+.number-icons {
+   color: var(--main-color);
+}
+
+
+/* START BLOG SECTION */
+
+#blog .title h2 {
+   font-size: 40px;
+   color: #333;
+}
+
+#blog .card-body a {
+text-decoration: none;
+}
+
+
+
+/* START CONTACT SECTION */
+#contact input {
+   border:  1px solid  gray  ;
+}
+
+#contact .form-control {
+   border:  1px solid  gray  ;
+}
+
+#contact .btn {
+   background-color: var(--main-color);
+}
+
+
+/* END CONTACT SECTION */
